@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
+=======
+import { Mail, Linkedin, Github, MapPin, Send } from "lucide-react";
+>>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
 import { Button } from "./ui/button";
 
 export const ContactSection = () => {
@@ -19,8 +23,13 @@ export const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
+<<<<<<< HEAD
       value: "github.com/harshit1845",
       href: "https://github.com/harshit1845",
+=======
+      value: "github.com/harshitdadheech",
+      href: "https://github.com/harshitdadheech",
+>>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
     },
     {
       icon: MapPin,

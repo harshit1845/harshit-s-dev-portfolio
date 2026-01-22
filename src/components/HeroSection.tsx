@@ -90,7 +90,11 @@ export const HeroSection = () => {
             className="flex items-center justify-center gap-4"
           >
             <a
+<<<<<<< HEAD
               href="https://github.com/harshit1845"
+=======
+              href="https://github.com/harshitdadheech"
+>>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
