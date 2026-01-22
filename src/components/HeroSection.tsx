@@ -75,9 +75,15 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-12 px-4 md:px-0"
           >
-            <Button size="lg" className="rounded-full px-6 sm:px-8 w-full sm:w-auto" asChild>
-              <a href="/resume/Harshit_Dadheech_Resume.pdf" download>Download Resume</a>
-            </Button>
+          <Button size="lg" className="rounded-full px-6 sm:px-8 w-full sm:w-auto" asChild>
+          <a
+            href={`${import.meta.env.BASE_URL}resume/Harshit_Dadheech_Resume.pdf`}
+          download
+  >
+    Download Resume
+  </a>
+</Button>
+
             <Button size="lg" variant="outline" className="rounded-full px-6 sm:px-8 w-full sm:w-auto" asChild>
               <a href="#projects">View Projects</a>
             </Button>
