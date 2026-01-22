@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 pb-8 md:pb-0 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
       
@@ -24,21 +24,35 @@ export const HeroSection = () => {
             </span>
           </motion.div>
 
+          {/* Animated hero text with staggered character reveal */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
+            className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 md:mb-6"
           >
-            Hi, I'm{" "}
-            <span className="gradient-text">Harshit Dadheech</span>
+            <motion.span
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Hi, I'm{" "}
+            </motion.span>
+            <motion.span 
+              className="gradient-text inline-block"
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+            >
+              Harshit Dadheech
+            </motion.span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-2xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto px-4 md:px-0"
           >
             Mobile Application Developer specializing in{" "}
             <span className="text-foreground font-medium">Android</span> &{" "}
@@ -49,21 +63,22 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-muted-foreground mb-10 max-w-xl mx-auto"
+            className="text-sm md:text-base text-muted-foreground mb-8 md:mb-10 max-w-xl mx-auto px-4 md:px-0"
           >
             3+ years of experience building scalable mobile applications for manufacturing & pharmaceutical industries
           </motion.p>
 
+          {/* CTA Buttons - Mobile responsive */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center gap-4 mb-12"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-12 px-4 md:px-0"
           >
-            <Button size="lg" className="rounded-full px-8" asChild>
+            <Button size="lg" className="rounded-full px-6 sm:px-8 w-full sm:w-auto" asChild>
               <a href="/resume/Harshit_Dadheech_Resume.pdf" download>Download Resume</a>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
+            <Button size="lg" variant="outline" className="rounded-full px-6 sm:px-8 w-full sm:w-auto" asChild>
               <a href="#projects">View Projects</a>
             </Button>
           </motion.div>

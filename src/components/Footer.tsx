@@ -1,16 +1,20 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 border-t border-border">
+    <footer className="py-6 md:py-8 border-t border-border">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          {/* Footer logo - same as header logo */}
           <div className="flex items-center gap-2">
-            <span className="font-display font-bold text-lg text-foreground">
-              HD<span className="text-primary">.</span>
-            </span>
+            <img 
+              src={logo} 
+              alt="Harshit Dadheech Logo" 
+              className="h-6 w-auto dark:invert-0 invert" 
+            />
             <span className="text-muted-foreground text-sm">
               © {currentYear} Harshit Dadheech
             </span>
