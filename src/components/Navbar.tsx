@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -32,8 +33,8 @@ export const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display font-bold text-xl text-foreground">
-          HD<span className="text-primary">.</span>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Harshit Dadheech Logo" className="h-8 w-auto dark:invert-0 invert" />
         </a>
 
         {/* Desktop Nav */}
