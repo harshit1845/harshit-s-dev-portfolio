@@ -78,18 +78,19 @@ export const ExperienceSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative pl-8 md:pl-0 pb-12 last:pb-0 ${
-                  index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8 md:ml-1/2"
+                className={`relative pl-8 md:pl-0 pb-12 last:pb-0 md:ml-1/2  ${
+                  index % 2 === 0 ? "md:pr-8 md:text-right md:w-[50%]" : "md:pl-8 md:pr-8 md:ml-1/2 "
                 }`}
-                style={{ marginLeft: index % 2 === 1 ? "50%" : 0, width: index % 2 === 1 ? "50%" : "50%" }}
+                // CHANGE THE SECOND 50% TO
+                // style={{ marginLeft: index % 2 === 1 ? "50%" : 0, width: index % 2 === 1 ? "50%" : "50%" }}
               >
                 {/* Timeline dot */}
-                <div className={`absolute top-0 w-4 h-4 rounded-full border-4 border-background ${
+                <div className={`absolute top-0 w-4 h-4 rounded-full border-4 border-background -left-2 ${
                   exp.current ? "bg-primary" : "bg-muted-foreground"
-                } ${index % 2 === 0 ? "left-0 md:left-auto md:-right-2" : "left-0 md:-left-2"}`} />
+                } ${index % 2 === 0 ? "left-0 md:left-auto md:-right-2" : "left-0 md:-left-2 md:ml-[50%]"}`} />
 
                 <div className={`glass-card p-6 hover:border-primary/30 transition-colors ${
-                  index % 2 === 0 ? "md:mr-6" : "md:ml-6"
+                  index % 2 === 0 ? "md:mr-6 " : "md:ml-[58%]"
                 }`}>
                   {exp.current && (
                     <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-3">
@@ -131,3 +132,4 @@ export const ExperienceSection = () => {
     </section>
   );
 };
+	
