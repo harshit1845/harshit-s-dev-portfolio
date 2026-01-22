@@ -132,7 +132,4 @@ export const ExperienceSection = () => {
     </section>
   );
 };
-<<<<<<< HEAD
-=======
-	
->>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
+

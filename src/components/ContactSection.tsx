@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
-=======
-import { Mail, Linkedin, Github, MapPin, Send } from "lucide-react";
->>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
 import { Button } from "./ui/button";
 
 export const ContactSection = () => {
@@ -23,13 +19,8 @@ export const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-<<<<<<< HEAD
       value: "github.com/harshit1845",
       href: "https://github.com/harshit1845",
-=======
-      value: "github.com/harshitdadheech",
-      href: "https://github.com/harshitdadheech",
->>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
     },
     {
       icon: MapPin,
@@ -63,10 +54,10 @@ export const ContactSection = () => {
                   Get in Touch
                 </h3>
                 <p className="text-muted-foreground mb-8">
-                  Whether you have a project in mind, want to discuss opportunities, 
+                  Whether you have a project in mind, want to discuss opportunities,
                   or just want to say hello, feel free to reach out. I'd love to hear from you!
                 </p>
-                
+
                 <div className="space-y-4">
                   {contactLinks.map((link, index) => (
                     <motion.div
