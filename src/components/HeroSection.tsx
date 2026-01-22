@@ -89,19 +89,15 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex items-center justify-center gap-4"
           >
-            <a
-<<<<<<< HEAD
-              href="https://github.com/harshit1845"
-=======
-              href="https://github.com/harshitdadheech"
->>>>>>> f7cf1a3340a02b2b7f0cd71a7294e2e6ce188bf4
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="w-5 h-5" />
-            </a>
+        <a
+          href="https://github.com/harshit1845"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+          aria-label="GitHub"
+          >
+  <Github className="w-5 h-5" />
+</a>
             <a
               href="https://linkedin.com/in/harshitdadheech"
               target="_blank"
