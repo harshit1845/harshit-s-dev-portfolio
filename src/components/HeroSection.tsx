@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const HeroSection = () => {
@@ -61,7 +61,7 @@ export const HeroSection = () => {
             className="flex flex-wrap items-center justify-center gap-4 mb-12"
           >
             <Button size="lg" className="rounded-full px-8" asChild>
-              <a href="#contact">Get in Touch</a>
+              <a href="/resume/Harshit_Dadheech_Resume.pdf" download>Download Resume</a>
             </Button>
             <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
               <a href="#projects">View Projects</a>
@@ -102,17 +102,6 @@ export const HeroSection = () => {
           </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-            <span className="text-sm">Scroll to explore</span>
-            <ArrowDown className="w-5 h-5 animate-bounce" />
-          </a>
-        </motion.div>
       </div>
     </section>
   );
